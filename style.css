@@ -266,3 +266,69 @@ form button {
   margin-top: 20px;
   font-size: 16px;
 }
+
+#experience {
+  width: 100%;
+  /* border: 1px solid white; */
+}
+#experience h1 {
+  font-size: 64px;
+  font-weight: 500;
+  text-align: center;
+  margin: 20px 0;
+}
+#experience-container {
+  width: 40%;
+  margin: 25px auto;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#experience-line {
+  width: 2px;
+  height: 1300px;
+  border: 1px solid rgb(255, 92, 17);
+  z-index: 1;
+}
+.experienceCard {
+  border: 1px solid white;
+  position: absolute;
+  left: 28px;
+  z-index: 2;
+  padding: 25px;
+  width: 90%;
+  background-color: #191818;
+  border-radius: 6px;
+}
+#experience1 {
+  top: 100px;
+}
+#experience2 {
+  top: 400px;
+}
+#experience3 {
+  top: 700px;
+}
+#experience4 {
+  top: 1000px;
+}
+.experienceCard h2 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.experienceCard h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+.experienceCard ul {
+  margin-top: 8px;
+}
+
+.experienceCard ul li {
+  font-size: 20px;
+  font-weight: 500;
+}

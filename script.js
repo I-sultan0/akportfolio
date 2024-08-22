@@ -83,3 +83,56 @@ gsap.to("#projects #projectContainer", {
     pin: true,
   },
 });
+gsap.from("#experience1", {
+  x: 1000,
+  duration: 0.5,
+  delay: 0,
+  scrollTrigger: {
+    trigger: "#experience-container",
+    scroller: "body",
+    // markers: true,
+    start: "top 80%",
+    end: "top 20%",
+    scrub: 2,
+  },
+});
+
+gsap.from("#experience2", {
+  x: -1000,
+  duration: 0.5,
+  delay: 0,
+  scrollTrigger: {
+    trigger: "#experience-container",
+    scroller: "body",
+    // markers: true,
+    start: "top 50%",
+    end: "top 0%",
+    scrub: 2,
+  },
+});
+gsap.from("#experience3", {
+  x: 1000,
+  duration: 0.5,
+  delay: 0,
+  scrollTrigger: {
+    trigger: "#experience-container",
+    scroller: "body",
+    // markers: true,
+    start: "top 0%",
+    end: "top -50%",
+    scrub: 2,
+  },
+});
+gsap.from("#experience4", {
+  x: -1000,
+  duration: 0.5,
+  delay: 0,
+  scrollTrigger: {
+    trigger: "#experience-container",
+    scroller: "body",
+    // markers: true,
+    start: "top -50%",
+    end: "top -90%",
+    scrub: 2,
+  },
+});
