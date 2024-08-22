@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #111;
+  overflow-x: hidden;
+  font-family: "VT323", monospace;
+  color: white;
+}
+#navbar {
+  width: 100%;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3);
+}
+#nav-logo {
+  padding: 10px 25px;
+}
+#nav-logo img {
+  /* border: 3px solid red; */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+#nav-links ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 25px;
+}
+#nav-links ul li {
+  list-style: none;
+}
+#nav-links ul li a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+/* Hero Section */
+
+#heroSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  /* border: 1px solid white; */
+  width: 95%;
+  margin: 20px auto;
+  height: 100%;
+}
+#heroText {
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+#heroText h1 {
+  font-size: 80px;
+  font-weight: 400;
+}
+#heroText h1:first-child {
+  color: rgb(255, 92, 17) !important;
+}
+#heroImage {
+  width: 50%;
+  height: 500px;
+}
+#heroImage img {
+  width: 100%;
+  height: 100%;
+}
+
+/* About Section */
+#about {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 100px; */
+}
+#socials {
+  /* border: 1px solid white; */
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  /* width: 60%; */
+}
+#socials img {
+  filter: brightness(0) saturate(100%) invert(74%) sepia(87%) saturate(5945%)
+    hue-rotate(345deg) brightness(95%) contrast(99%);
+  margin: 5px 15px;
+  height: 40px;
+}
+#about h2 {
+  font-size: 62px;
+  font-weight: 500;
+}
+#aboutText {
+  padding: 3vw 5vw;
+  border: 1px solid white;
+  width: 60%;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  border: 1px solid rgb(255, 92, 17);
+  border-radius: 12px;
+  /* color: blue; */
+}
+/* #aboutText {
+    opacity: 0;
+  } */
+
+/* Projects Section */
+
+#projects {
+  width: 100%;
+  height: 100%;
+  /* background-color: #fff; */
+  text-align: center;
+  white-space: nowrap;
+  /* color: black; */
+}
+#projects h1 {
+  display: inline-block;
+  font-size: 30vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-left: 30px;
+  /* border: 1px solid white; */
+
+  /* color: black; */
+}
+/* #projectContainer h1 span {
+    color: rgb(255, 92, 17) !important;
+  } */
+#projectContainer div {
+  display: inline-block;
+  width: 500px;
+  border: 1px solid rgb(255, 92, 17);
+  margin: 8% 120px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#projectContainer div img {
+  width: 400px;
+  height: 200px;
+  /* border: 1px solid black; */
+  object-fit: cover;
+}
+#projectContainer div h2 {
+  font-size: 32px;
+  padding: 15px;
+  font-weight: 500;
+}
+#projectContainer div p {
+  font-size: 22px;
+  white-space: normal;
+}
+#projectContainer div button {
+  padding: 5px 8px;
+  border-radius: 8px;
+  border: 1px solid black;
+  margin-top: 20px;
+  font-family: "VT323", monospace;
+  font-size: 22px;
+  font-weight: normal;
+  color: rgb(255, 92, 17);
+}
+
+/* Contact */
+
+#contact {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid white;
+  margin: 10px auto;
+}
+
+#contactText {
+  border: 1px solid white;
+  width: 50%;
+  font-size: 32px;
+}
+#contactText h2 {
+  font-weight: normal;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  width: 50%;
+  /* text-align: center; */
+  /* justify-content: center; */
+  align-items: center;
+}
+form input {
+  padding: 4px;
+  width: 250px;
+  margin: 15px 0;
+}
