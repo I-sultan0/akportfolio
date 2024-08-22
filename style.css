@@ -193,17 +193,30 @@ body {
 #contact {
   width: 80%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   border: 1px solid white;
-  margin: 10px auto;
+  margin: 30px auto;
+  text-align: center;
+}
+#contact h1 {
+  font-size: 64px;
+  margin: 20px;
+  font-weight: 500;
+}
+#contactBox {
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid white;
+  margin: 80px auto;
+  align-items: stretch;
 }
 
 #contactText {
   border: 1px solid white;
   width: 50%;
-  font-size: 32px;
+  font-size: 28px;
+  text-align: left;
+  padding: 10px;
 }
 #contactText h2 {
   font-weight: normal;
@@ -211,14 +224,45 @@ body {
 form {
   display: flex;
   flex-direction: column;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   width: 50%;
   /* text-align: center; */
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
 }
 form input {
-  padding: 4px;
+  padding: 8px;
   width: 250px;
   margin: 15px 0;
+  border: 1px solid white;
+  background-color: #111;
+}
+form input::placeholder {
+  color: white;
+  font-family: "VT323", monospace;
+  font-size: 18px;
+}
+form textarea {
+  resize: none;
+  margin-top: 15px;
+  border: 1px solid white;
+  background-color: #111;
+}
+form textarea::placeholder {
+  color: white;
+  font-family: "VT323", monospace;
+  font-size: 18px;
+
+  /* align-items: center; */
+  /* text-align: center; */
+}
+form button {
+  background-color: rgb(255, 92, 17);
+  width: 130px;
+  height: 30px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  margin-top: 20px;
+  font-size: 16px;
 }
