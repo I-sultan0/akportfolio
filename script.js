@@ -80,7 +80,7 @@ gsap.to("#projects #projectContainer", {
     scroller: "body",
     // markers: true,
     start: "top 0%",
-    end: "top -100%",
+    end: "top -200%",
     scrub: 2,
     pin: true,
   },

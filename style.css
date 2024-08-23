@@ -16,6 +16,11 @@ body {
   font-family: "VT323", monospace;
   color: white;
 }
+
+button {
+  cursor: pointer;
+}
+
 #cursor {
   position: fixed;
   display: flex;
@@ -142,6 +147,7 @@ body {
 #about h2 {
   font-size: 62px;
   font-weight: 500;
+  margin-right: 25px;
 }
 #aboutText {
   padding: 3vw 5vw;
@@ -214,6 +220,118 @@ body {
   font-size: 22px;
   font-weight: normal;
   color: rgb(255, 92, 17);
+}
+
+/* Experience Section */
+
+#experience {
+  width: 100%;
+  /* border: 1px solid white; */
+}
+#experience h1 {
+  font-size: 64px;
+  font-weight: 500;
+  text-align: center;
+  margin: 20px 0;
+}
+#experience-container {
+  width: 40%;
+  margin: 25px auto;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#experience-line {
+  width: 2px;
+  height: 1300px;
+  border: 1px solid rgb(255, 92, 17);
+  z-index: 1;
+}
+.experienceCard {
+  border: 1px solid white;
+  position: absolute;
+  left: 28px;
+  z-index: 2;
+  padding: 25px;
+  width: 90%;
+  background-color: #191818;
+  border-radius: 6px;
+}
+#experience1 {
+  top: 100px;
+}
+#experience2 {
+  top: 400px;
+}
+#experience3 {
+  top: 700px;
+}
+#experience4 {
+  top: 1000px;
+}
+.experienceCard h2 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.experienceCard h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+.experienceCard ul {
+  margin-top: 8px;
+}
+
+.experienceCard ul li {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Tech Stack Section */
+
+#tech-stack {
+  width: 80%;
+  /* height: 100%; */
+  /* border: 1px solid white; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 35px 20px;
+  margin: 100px auto;
+}
+#tech-stack h1 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+.tech {
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+.tech img {
+  width: 30px;
+  height: 30px;
+  margin: 0px 12px 0px 0px;
+  filter: brightness(0) saturate(100%) invert(74%) sepia(87%) saturate(5945%)
+    hue-rotate(345deg) brightness(95%) contrast(99%);
+}
+
+.tech h3 {
+  font-size: 28px;
+  font-weight: 500;
 }
 
 /* Contact */
@@ -295,68 +413,35 @@ form button {
   font-size: 16px;
 }
 
-#experience {
-  width: 100%;
-  /* border: 1px solid white; */
-}
-#experience h1 {
-  font-size: 64px;
-  font-weight: 500;
-  text-align: center;
-  margin: 20px 0;
-}
-#experience-container {
-  width: 40%;
-  margin: 25px auto;
-  /* border: 1px solid white; */
+/* Footer Section */
+
+#footer {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  position: relative;
-}
-#experience-line {
-  width: 2px;
-  height: 1300px;
-  border: 1px solid rgb(255, 92, 17);
-  z-index: 1;
-}
-.experienceCard {
-  border: 1px solid white;
-  position: absolute;
-  left: 28px;
-  z-index: 2;
+  justify-content: space-evenly;
+  background-color: #1d1b1b;
+  width: 100%;
+  height: 50%;
+  margin-top: 35px;
   padding: 25px;
-  width: 90%;
-  background-color: #191818;
-  border-radius: 6px;
-}
-#experience1 {
-  top: 100px;
-}
-#experience2 {
-  top: 400px;
-}
-#experience3 {
-  top: 700px;
-}
-#experience4 {
-  top: 1000px;
-}
-.experienceCard h2 {
-  font-size: 28px;
-  font-weight: 500;
-}
-.experienceCard h3 {
-  font-size: 24px;
-  font-weight: 500;
-  margin-top: 8px;
-}
-.experienceCard ul {
-  margin-top: 8px;
 }
 
-.experienceCard ul li {
-  font-size: 20px;
-  font-weight: 500;
+.footer-items p {
+  margin: 10px;
+  font-size: 32px;
+}
+.footer-items a {
+  text-decoration: none;
+  color: white;
+}
+#footer-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer-socials img {
+  filter: brightness(0) saturate(100%) invert(74%) sepia(87%) saturate(5945%)
+    hue-rotate(345deg) brightness(95%) contrast(99%);
+  margin: 5px 15px;
+  height: 40px;
 }
