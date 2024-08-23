@@ -1,6 +1,8 @@
 var tl = gsap.timeline();
 var tlHero = gsap.timeline();
-
+var main = document.querySelector("body");
+var cursor = document.querySelector("#cursor");
+var navLinks = document.querySelector("#nav-links ul");
 // Navbar
 
 tl.from("#nav-logo", {
@@ -83,6 +85,9 @@ gsap.to("#projects #projectContainer", {
     pin: true,
   },
 });
+
+// Experience Section
+
 gsap.from("#experience1", {
   x: 1000,
   duration: 0.5,
@@ -136,3 +141,30 @@ gsap.from("#experience4", {
     scrub: 2,
   },
 });
+
+// Cursor Animation
+
+main.addEventListener("mousemove", function (dets) {
+  console.log(dets.x);
+  gsap.to(cursor, {
+    x: dets.x + 10,
+    y: dets.y,
+    duration: 0.8,
+  });
+});
+
+// navLinks.addEventListener("mouseenter", function (dets) {
+//   gsap.to(cursor, {
+//     scale: 5,
+//     backgroundColor: "transparent",
+//     border: "0.5px solid white",
+//   });
+// });
+
+// navLinks.addEventListener("mouseout", function (dets) {
+//   gsap.to(cursor, {
+//     scale: 1,
+//     backgroundColor: "white",
+//     border: "none",
+//   });
+// });

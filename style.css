@@ -16,6 +16,34 @@ body {
   font-family: "VT323", monospace;
   color: white;
 }
+#cursor {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  z-index: 9;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 50%;
+}
+/* .cursors {
+  width: 20px;
+  height: 25px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+#cursor2 {
+  width: 10px;
+  height: 10px;
+}
+#cursor3 {
+  width: 5px;
+  height: 5px;
+} */
 #navbar {
   width: 100%;
   /* border: 1px solid white; */
