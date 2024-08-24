@@ -51,7 +51,6 @@ button {
 } */
 #navbar {
   width: 100%;
-  /* border: 1px solid white; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,6 +86,26 @@ button {
   font-weight: 400;
 }
 
+@media (max-width: 600px) {
+  #navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    /* border: 3px solid white; */
+    height: 50px;
+    width: 100%;
+    top: auto;
+    background-color: #1d1b1b;
+  }
+  #nav-logo {
+    display: none;
+  }
+  #nav-links {
+    /* border: 1px solid white; */
+    width: 100%;
+  }
+}
+
 /* Hero Section */
 
 #heroSection {
@@ -100,10 +119,10 @@ button {
   height: 100%;
 }
 #heroText {
-  /* display: flex; */
   align-items: center;
   justify-content: center;
   width: 50%;
+  /* width: 500px; */
 }
 #heroText h1 {
   font-size: 80px;
@@ -114,11 +133,31 @@ button {
 }
 #heroImage {
   width: 50%;
+  /* width: 500px; */
+
   height: 500px;
 }
 #heroImage img {
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 600px) {
+  #heroSection {
+    height: auto;
+    margin-bottom: 150px;
+  }
+  #heroImage {
+    display: none;
+  }
+  #heroText {
+    /* border: 1px solid white; */
+    width: 100%;
+    margin-top: 30px;
+  }
+  #heroText h1 {
+    font-size: 64px;
+  }
 }
 
 /* About Section */
@@ -129,7 +168,6 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* margin-top: 100px; */
 }
 #socials {
   /* border: 1px solid white; */
@@ -160,9 +198,28 @@ button {
   border-radius: 12px;
   /* color: blue; */
 }
-/* #aboutText {
-    opacity: 0;
-  } */
+@media (width < 600px) {
+  #socials {
+    display: block;
+    /* border: 1px solid white; */
+  }
+  #socials h2 {
+    font-size: 44px;
+    text-align: center;
+    margin: 10px auto;
+    /* border: 1px solid white; */
+    margin-top: 100px;
+
+    display: block;
+  }
+  #socials img {
+    height: 30px;
+    /* border: 1px solid white; */
+  }
+  #aboutText {
+    width: 90%;
+  }
+}
 
 /* Projects Section */
 
@@ -290,6 +347,15 @@ button {
   font-weight: 500;
 }
 
+@media (width < 600px) {
+  #experience-container {
+    width: 80%;
+  }
+  #experience h1 {
+    font-size: 44px;
+  }
+}
+
 /* Tech Stack Section */
 
 #tech-stack {
@@ -334,6 +400,18 @@ button {
   font-weight: 500;
 }
 
+@media (width <600px) {
+  #tech-stack {
+    width: 100%;
+    margin: 50px auto;
+  }
+  #tech-stack h1 {
+    font-size: 44px;
+  }
+  .tech {
+    margin: 10px;
+  }
+}
 /* Contact */
 
 #contact {
@@ -372,7 +450,6 @@ form {
   flex-direction: column;
   /* border: 1px solid white; */
   width: 50%;
-  /* text-align: center; */
   justify-content: center;
   align-items: center;
 }
@@ -398,9 +475,6 @@ form textarea::placeholder {
   color: white;
   font-family: "VT323", monospace;
   font-size: 18px;
-
-  /* align-items: center; */
-  /* text-align: center; */
 }
 form button {
   background-color: rgb(255, 92, 17);
@@ -411,6 +485,28 @@ form button {
   color: white;
   margin-top: 20px;
   font-size: 16px;
+}
+
+@media (width < 600px) {
+  #contact {
+    width: 100%;
+    height: auto;
+    padding: 45px 25px;
+    border: none;
+  }
+  #contact h1 {
+    font-size: 44px;
+  }
+  #contactText {
+    display: none;
+  }
+  #contactBox {
+    margin: 20px auto;
+  }
+  form {
+    width: 100%;
+    margin-bottom: 80px;
+  }
 }
 
 /* Footer Section */
@@ -444,4 +540,9 @@ form button {
     hue-rotate(345deg) brightness(95%) contrast(99%);
   margin: 5px 15px;
   height: 40px;
+}
+@media (width < 600px) {
+  #footer {
+    display: none;
+  }
 }
